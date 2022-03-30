@@ -1,5 +1,7 @@
 import './App.css';
 import React from 'react';
+import SearchBar from './components/SearchBar/SearchBar';
+
 
 function App() {
   React.useEffect(() => {
@@ -10,6 +12,7 @@ function App() {
   return (
     <div className="App">
       Main page
+      <SearchBar />
     </div>
   );
 }
