@@ -1,3 +1,11 @@
 .searchButton {
-  @apply bg-gray-400 ml-2 p-1 rounded text-white hover:bg-gray-700 transform duration-1000;
+  @apply bg-green-500 ml-2 p-1 rounded text-white hover:bg-green-700 transform duration-1000;
+}
+
+.clearButton {
+  @apply bg-red-400 ml-2 p-1 rounded text-white hover:bg-red-600 transform duration-1000;
+}
+
+.searchInput {
+  @apply border-2 border-b-neutral-400 hover:shadow-lg;
 }
