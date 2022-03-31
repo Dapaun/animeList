@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import SearchBar from './components/SearchBar/SearchBar';
 
@@ -10,7 +9,7 @@ function App() {
       .then(json => console.log(json))
   },[])
   return (
-    <div className="App">
+    <div>
       Main page
       <SearchBar />
     </div>
