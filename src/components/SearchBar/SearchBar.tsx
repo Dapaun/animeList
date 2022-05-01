@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineSearch, AiOutlineCloseCircle } from 'react-icons/ai';
+import Button, { buttonTypeValue } from '../Button/Button';
 import './SearchBar.scss';
 
 const SearchBar = (props: any) => {
@@ -36,21 +36,9 @@ const SearchBar = (props: any) => {
         onChange={handleSearchTermChange}
         placeholder="Search an anime!"
       />
-      <button 
-        className="searchButton"
-        onClick={handleClickSearch}
-      >
-        Search
-        <AiOutlineSearch className="inline ml-1 scale-125"/>
-      </button>
-      {displayClearButton &&
-        <button 
-          className="clearButton"
-          onClick={handleClickClear}
-        >
-          Clear
-          <AiOutlineCloseCircle className="inline ml-1 scale-125"/>
-        </button>
+      <Button buttonType = { buttonTypeValue.search } handleCLick = {handleClickSearch}/>
+      {displayClearButton && 
+        <Button buttonType = { buttonTypeValue.clear } handleCLick = {handleClickClear}/>
       }
     </div>
   );
