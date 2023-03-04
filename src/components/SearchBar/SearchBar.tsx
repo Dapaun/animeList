@@ -13,7 +13,14 @@ const SearchBar = (props: any) => {
   const baseUrl = 'https://api.aniapi.com/v1/anime?title=';
 
   const handleClickSearch = () => {
-      fetch(baseUrl + encodeURIComponent(searchTerm))
+      fetch(baseUrl + encodeURIComponent(searchTerm), {
+        method: "POST",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/json"
+        },
+        // body: JSON.stringify(body)
+      })
       .then(response => response.json())
       .then(animeList => 
         {

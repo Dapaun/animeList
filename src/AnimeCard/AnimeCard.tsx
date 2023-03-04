@@ -10,6 +10,7 @@ const AnimeCard = (props: any) => {
             <img
                 className='p-2 h-32 w-60 object-cover'
                 src={img}
+                alt=""
             />
             <p
                 dangerouslySetInnerHTML={{ __html: description }}

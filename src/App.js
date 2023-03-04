@@ -1,5 +1,4 @@
 import React from 'react';
-import HomePage from './pages/HomePage';
 import SearchBar from './components/SearchBar/SearchBar';
 import AnimeCard from './AnimeCard/AnimeCard';
 
